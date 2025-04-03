@@ -439,7 +439,7 @@ ai agents utilize a hierarchical wallet structure to manage different transactio
 
 1. **on-chain base layer**:
    - bitcoin or stablecoin wallet for settlement transactions, with platforms like virtuals protocol managing tokenized assets
-   - multi-signature security with configurable approval thresholds (e.g. 2-of-3 signatures), as seen in mpcvault
+   - multi-signature security with configurable approval thresholds (e.g. 2-of-3 signatures)
    - cold storage integration for high-value reserves
    - automated rebalancing to lightning channels based on usage patterns
 
@@ -487,7 +487,7 @@ ai agent wallets implement a tiered authorization framework that balances autono
 | medium | $50.01-$500.00 | policy-based approval | 5-30 seconds |
 | large | >$500.00 | human confirmation required | variable |
 
-for micro-transactions (<$1.00), agents operate fully autonomously using pre-approved policies, with `cb-mpc`'s ecdsa-mpc ensuring secure, distributed signing of bitcoin and stablecoin payments, as seen in virtuals protocol's trading agents. medium and large tiers ($50.01-$500.00 and >$500.00) leverage multisig wallets (e.g. mpcvault's 2-of-3 model), requiring policy-based or human approval, respectively, balancing autonomy with oversight.
+for micro-transactions (<$1.00), agents operate fully autonomously using pre-approved policies, with `cb-mpc`'s ecdsa-mpc ensuring secure, distributed signing of bitcoin and stablecoin payments, as seen in virtuals protocol's trading agents. medium and large tiers ($50.01-$500.00 and >$500.00) leverage multisig wallets with configurable thresholds (e.g. 2-of-3 model), requiring policy-based or human approval, respectively, balancing autonomy with oversight.
 
 for fully autonomous transactions (<$1.00), agents utilize:
 - pre-approved spending policies
@@ -497,7 +497,7 @@ for fully autonomous transactions (<$1.00), agents utilize:
 
 #### 10.2.2 user-confirmed transaction flow
 
-for transactions requiring human confirmation, the wallet uses mpc to generate a single signature from distributed shares or multisig to collect multiple signatures, notifying the human owner via an approval interface. this mirrors fireblocks' institutional custody model, providing transaction details, risk scores and multi-factor authentication to ensure secure execution of bitcoin and stablecoin payments.
+for transactions requiring human confirmation, the wallet uses mpc to generate a single signature from distributed shares or multisig to collect multiple signatures, notifying the human owner via an approval interface. this institutional custody approach provides transaction details, risk scores and multi-factor authentication to ensure secure execution of bitcoin and stablecoin payments.
 
 ```
 ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
