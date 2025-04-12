@@ -391,7 +391,7 @@ this model is particularly suited for agent ecosystems within the same applicati
 
 #### 8.2.2 fiat integration costs
 
-when integrating with fiat payment systems (e.g. stripe, coinbase), the fee structure changes significantly:
+when integrating with fiat payment systems, the fee structure changes significantly:
 
 | payment provider | micropayment fee | minimum fee | viable transaction size |
 |-----------------|-------------------|-------------|-------------------------|
@@ -525,7 +525,7 @@ ai agents utilize a hierarchical wallet structure to manage different transactio
    - support for sub-satoshi micropayments for both bitcoin and stablecoins
 
 3. **fiat integration layer** (optional):
-   - api connections to traditional banking or payment processors like coinbase
+   - api connections to traditional banking or payment processors
    - automated currency conversion based on configurable rules
    - compliance reporting for fiat-crypto conversions
    - support for stablecoin conversions with regulatory reporting
