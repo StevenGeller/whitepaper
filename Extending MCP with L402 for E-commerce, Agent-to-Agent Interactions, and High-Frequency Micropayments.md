@@ -423,7 +423,7 @@ the following table compares mcp+l402 with alternative solutions for agent-to-ag
 | **mcp+l402 (lightning)** | 500-800 | 200-800 | ~$0.0001 |
 | **web monetization (interledger)** | 1,000+ | 500-1000 | ~$0.0001 |
 | **ethereum l2 (base)** | 500-1000 | 2000-10000 | ~$0.001 |
-| **cbdc solutions (e.g. digital yuan)** | 10,000+ | 100-300 | ~$0.01 |
+| **cbdc solutions** | 10,000+ | 100-300 | ~$0.01 |
 | **solana pay** | 1,500+ | 400-800 | ~$0.001 |
 
 ### 9.2 key strengths and weaknesses
